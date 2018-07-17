@@ -56,13 +56,14 @@ img {
 }
 
 .tabela {
+  border-collapse: collapse;
   text-align: center;
 }
 
 .tabela td,
 .tabela th {
   padding: 1.125rem;
-  border: 1px solid black;
+  border: 1px solid #ccc;
 }
 
 .menuzao ul {
