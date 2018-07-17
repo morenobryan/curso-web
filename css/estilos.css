@@ -99,13 +99,13 @@ img {
   border: 1px solid rgb(47, 7, 80);
   display: inline-block;
   margin: 0.625rem 0;
-  padding: 0.9375rem 1.25rem;
+  padding: 0.625rem 0.9375rem;
   font-size: 1.3rem;
   text-decoration: none;
   background-color: rgb(101, 13, 173);
   transition: 0.5s all;
   color: white;
-  border-radius: 10px;
+  border-radius: 0.4375rem;
 }
 
 .headline-button:hover {
