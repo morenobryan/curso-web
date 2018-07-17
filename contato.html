@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Site dos Pelos</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Sunflower:700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="wolf">
+      <img class="logo" alt="" src="imagens/wolf.png" width="80" height="80" /> Cursos Web Wolf</h1>
+    <nav class="menuzao">
+      <ul>
+        <li>
+          <a class="link-menu" href="#">Página Inicial</a>
+        </li>
+        <li>
+          <a class="link-menu" href="perfis.html">Perfis dos Estudantes</a>
+        </li>
+        <li>
+          <a class="link-menu" href="cursos.html">Cursos</a>
+        </li>
+        <li>
+          <a class="link-menu" href="#" target="_blank">Inscrições</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main">
+    <form action="#" method="GET">
+      <input type="hidden" id="pelo" name="pelo" value="Ovelha reprovado" />
+
+      <p>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="João da Silva" required />
+      </p>
+
+      <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="pelo@peludinho.com" />
+      </p>
+
+      <p>
+        <label for="assunto">Assunto</label>
+        <select id="assunto" name="assunto">
+          <option>Sugestão</option>
+          <option>Reclamação</option>
+          <option>Elogio</option>
+          <option selected>Peludice</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" cols="50" rows="10" name="mensagem"></textarea>
+      </p>
+
+      <p>
+        <fieldset>
+          <legend>Tipo de pelo</legend>
+          <div>
+            <input type="checkbox" id="sedoso" name="tipoPelo" value="s" />
+            <label for="sedoso">Sedoso</label>
+          </div>
+          <div>
+            <input type="checkbox" checked id="brilhante" name="tipoPelo" value="b" />
+            <label for="brilhante">Brilhante</label>
+          </div>
+          <div>
+            <input type="checkbox" id="encravado" name="tipoPelo" value="e" />
+            <label for="encravado">Encravado</label>
+          </div>
+        </fieldset>
+      </p>
+
+      <p>
+        <fieldset>
+          <legend>Receber email de confirmação</legend>
+          <div>
+            <input type="radio" id="nao" name="confirmacao" />
+            <label for="nao">Não</label>
+          </div>
+          <div>
+            <input type="radio" checked id="sim" name="confirmacao" />
+            <label for="sim">Sim</label>
+          </div>
+        </fieldset>
+      </p>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Copyright 2018 - by Bryan Moreno</p>
+    <nav class="icones-footer">
+      <ul>
+        <li>
+          <a href="https://youtube.com">
+            <img alt="Youtube" src="imagens/youtube.png" width="30" height="30" />
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com">
+            <img alt="Facebook" src="imagens/facebook.png" width="30" height="30" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com">
+            <img alt="Twitter" src="imagens/twitter.png" width="30" height="30" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>
