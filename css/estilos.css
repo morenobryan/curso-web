@@ -95,7 +95,9 @@ img {
   font-size: 2rem;
 }
 
-.headline-button {
+.headline-button,
+button {
+  font-family: inherit;
   border: 1px solid rgb(47, 7, 80);
   display: inline-block;
   margin: 0.625rem 0;
@@ -108,7 +110,8 @@ img {
   border-radius: 0.4375rem;
 }
 
-.headline-button:hover {
+.headline-button:hover,
+button:hover {
   background-color: rgb(75, 9, 129);
 }
 
@@ -131,6 +134,32 @@ footer p {
 
 .icones-footer li {
   margin: 0.625rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  border: 1px solid #ccc;
+  font-family: inherit;
+  padding: 0.4375rem 0.625rem;
+  width: 15rem;
+  font-size: 80%;
 }
 
 @media (min-width: 31.25em) {
@@ -159,6 +188,10 @@ footer p {
 
   .link-menu {
     display: inline-block;
+  }
+
+  form p {
+    width: 30rem;
   }
 
   footer {
