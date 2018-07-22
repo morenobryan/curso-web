@@ -162,6 +162,13 @@ textarea {
   font-size: 80%;
 }
 
+.sucesso {
+  padding: 0.625rem;
+  background-color: rgb(114, 226, 142);
+  border: 1px solid rgb(38, 128, 61);
+  border-radius: 5px;
+}
+
 @media (min-width: 31.25em) {
   header div {
     display: flex;
