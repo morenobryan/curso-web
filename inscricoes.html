@@ -33,7 +33,73 @@
   </header>
 
   <section class="main">
-  </section>
+
+  <form method="post" id="ifContato" action= >
+  <fieldset id="usuario">
+  <legend>Identificação do Usuário</legend>
+        <p><label for="cNome">Nome Completo:</label><input type="text" name="tNome" id="cNome" size="30" maxlength="50" placeholder="Pelo da Silva"/></p>
+        <p><label for="cUsuario">Nome de Usuário:</label><input type="text" name="tUsuario" id="cUsuario" size="30" maxlength="50" placeholder="Nome Peludo"/></p>
+        <p><label for="senha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digítos"/></p>
+        <p>E-mail:<input type="email" name="tMail" id="cMail" size="30" maxlength="40" placeholder="pelo@webwolf.com"/></p>
+        <fieldset id="sexo"><legend>Sexo:</legend>
+            <input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc"> Masculino</label><br/>
+            <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label></fieldset>
+        <p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc"/></p>
+  </fieldset>
+
+  <fieldset id="endereco">
+    <legend>Endereço do Usuário</legend>
+    <p>Logradouro:<input type="text" name="tRua" id="cRua" size="30" maxlength="80" placeholder="Rua, Avenida, Praça, etc"/></p>
+    <p>Número:<input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+    <p><label for="cPais">País:</label>
+    <select name="tPais" id="cPais">
+      <option selected>Brasil</option>
+      <option>Alemanha</option>
+      </select></p>
+    <p><label for="cEst">Estado:</label>
+    <select name="tEst" id="cEst">
+      <option selected>PR</option>
+      <option>SP</option>
+      <option>HH</option>
+  </select></p>
+    <p><label for="cCid">Cidade:</label><input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Cidade" list="cidade"/></p>
+    <datalist id="cidade">
+      <option value="Curitiba"></option>
+      <option value="Votorantim"></option>
+      <option value="Hamburg"></option>
+    </datalist>
+  </fieldset>
+
+
+  <fieldset id="cursos"><legend>Escolha dos Cursos:</legend>
+    <p>Matrícula em:</p>
+    <p><legend><input type="checkbox" name="tCur" id="cCur" value="html"/>HTML5 e CSS3 (30h)</p>
+    <p><legend><input type="checkbox" name="tCur" id="cCur" value="php"/>PHP (30h)</p>
+    <p><legend><input type="checkbox" name="tCur" id="cCur" value="ruby"/>Ruby on Rails (30h)</p>
+    <p><legend><input type="checkbox" name="tCur" id="cCur" value="laravel"/>Laravel (10h)</p>
+    <p><legend><input type="checkbox" name="tCur" id="cCur" value="mysql"/>MySQL (10h)</p>
+    <p><legend><input type="checkbox" name="tCur" id="cCur" value="wordpress"/>WordPress (10h)</p>
+    <p><legend><input type="checkbox" name="tCur" id="cCur" value="javascript"/>Javascript (40h)</p>
+    <p><legend><input type="checkbox" name="tCur" id="cCur" value="react"/>React (30h)</p>
+    <p><legend><input type="checkbox" name="tCur" id="cCur" value="reactnative"/>React Native (20h)</p>
+    <fieldset id="freq"><legend>Frequência:</legend>
+        <input type="radio" name="freqs" id="c1"/> <label for="c1">1 vez por semana</label><br/>
+        <input type="radio" name="freqs" id="c2"/> <label for="c2">2 vezes por semana</label><br/>
+        <input type="radio" name="freqs" id="c3"/> <label for="c3">3 vezes por semana</label><br/>
+        <input type="radio" name="freqs" id="c5"/> <label for="c5">5 vezes por semana</label><br/>
+      </fieldset>
+      <p><label for="cCor">Cor do ceritificado:</label> <input name="tCor"id="cCor"type="color" value="#0000FF"/></p>
+
+      <p><label for="cQH">Carga horária total:</label><input type="text" name="tQH" id="cQH" placeholder="C.H." readonly/></p>
+      <p><label for="cQuant">Quantidade de cursos:</label><input type="text" name="tQuant" id="cQuant" placeholder="Quantidade de Cursos" readonly/></p>
+      <p><label for="cFormatura">Previsão de formatura:</label><input type="text" name="tFormatura" id="cFormatura" placeholder="Previsão" readonly/></p>
+      <p><label for="cTot">Valor Total: R$</label><input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly/></p>
+  </fieldset>
+
+<button type="submit">Enviar</button>
+</form>
+</section>
+
 
   <footer>
     <div>
