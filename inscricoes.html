@@ -55,7 +55,7 @@
         <fieldset id="sexo">
           <legend>Sexo:</legend>
           <input type="radio" name="tSexo" id="cMasc" />
-          <label for="cMasc"> Masculino</label>
+          <label for="cMasc">Masculino</label>
           <br/>
           <input type="radio" name="tSexo" id="cFem" />
           <label for="cFem">Feminino</label>
@@ -106,54 +106,58 @@
         <legend>Escolha dos Cursos:</legend>
         <p>Matrícula em:</p>
         <div>
-          <input type="checkbox" name="tCur" id="cCurHTML" value="html" />
+          <input type="checkbox" id="selecionarTodos" />
+          <label for="selecionarTodos">Selecionar Todos</label>
+        </div>
+        <div>
+          <input type="checkbox" name="tCur" id="cCurHTML" value="html" data-carga-horaria="30" data-preco="120" />
           <label for="cCurHTML">HTML5 e CSS3 (30h)</label>
         </div>
         <div>
-          <input type="checkbox" name="tCur" id="cCurPHP" value="php" />
+          <input type="checkbox" name="tCur" id="cCurPHP" value="php" data-carga-horaria="30" data-preco="120" />
           <label for="cCurPHP">PHP (30h)</label>
         </div>
         <div>
-          <input type="checkbox" name="tCur" id="cCurRuby" value="ruby" />
+          <input type="checkbox" name="tCur" id="cCurRuby" value="ruby" data-carga-horaria="30" data-preco="160" />
           <label for="cCurRuby">Ruby on Rails (30h)</label>
         </div>
         <div>
-          <input type="checkbox" name="tCur" id="cCurLaravel" value="laravel" />
+          <input type="checkbox" name="tCur" id="cCurLaravel" value="laravel" data-carga-horaria="10" data-preco="40" />
           <label for="cCurLaravel">Laravel (10h)</label>
         </div>
         <div>
-          <input type="checkbox" name="tCur" id="cCurMySQL" value="mysql" />
+          <input type="checkbox" name="tCur" id="cCurMySQL" value="mysql" data-carga-horaria="10" data-preco="30" />
           <label for="cCurMySQL">MySQL (10h)</label>
         </div>
         <div>
-          <input type="checkbox" name="tCur" id="cCurWordpress" value="wordpress" />
+          <input type="checkbox" name="tCur" id="cCurWordpress" value="wordpress" data-carga-horaria="10" data-preco="60" />
           <label for="cCurWordpress">WordPress (10h)</label>
         </div>
         <div>
-          <input type="checkbox" name="tCur" id="cCurJavascript" value="javascript" />
+          <input type="checkbox" name="tCur" id="cCurJavascript" value="javascript" data-carga-horaria="40"  data-preco="140"/>
           <label for="cCurJavascript">Javascript (40h)</label>
         </div>
         <div>
-          <input type="checkbox" name="tCur" id="cCurReact" value="react" />
+          <input type="checkbox" name="tCur" id="cCurReact" value="react" data-carga-horaria="30" data-preco="130" />
           <label for="cCurReact">React (30h)</label>
         </div>
         <div>
-          <input type="checkbox" name="tCur" id="cCurReactNative" value="reactnative" />
+          <input type="checkbox" name="tCur" id="cCurReactNative" value="reactnative" data-carga-horaria="20" data-preco="70" />
           <label for="cCurReactNative">React Native (20h)</label>
         </div>
 
         <fieldset id="freq">
           <legend>Frequência:</legend>
-          <input type="radio" name="freqs" id="c1" />
+          <input type="radio" name="freqs" id="c1" value="1" />
           <label for="c1">1 vez por semana</label>
           <br/>
-          <input type="radio" name="freqs" id="c2" />
+          <input type="radio" name="freqs" id="c2" value="2" />
           <label for="c2">2 vezes por semana</label>
           <br/>
-          <input type="radio" name="freqs" id="c3" />
+          <input type="radio" name="freqs" id="c3" value="3" />
           <label for="c3">3 vezes por semana</label>
           <br/>
-          <input type="radio" name="freqs" id="c5" />
+          <input type="radio" name="freqs" id="c5" value="5" />
           <label for="c5">5 vezes por semana</label>
           <br/>
         </fieldset>
@@ -164,19 +168,19 @@
 
         <p>
           <label for="cQH">Carga horária total:</label>
-          <input type="text" name="tQH" id="cQH" placeholder="C.H." readonly/>
+          <input type="text" name="tQH" id="cQH" placeholder="C.H." readonly />
         </p>
         <p>
           <label for="cQuant">Quantidade de cursos:</label>
-          <input type="text" name="tQuant" id="cQuant" placeholder="Quantidade de Cursos" readonly/>
+          <input type="text" name="tQuant" id="cQuant" placeholder="Quantidade de Cursos" readonly />
         </p>
         <p>
           <label for="cFormatura">Previsão de formatura:</label>
-          <input type="text" name="tFormatura" id="cFormatura" placeholder="Previsão" readonly/>
+          <input type="text" name="tFormatura" id="cFormatura" placeholder="Previsão" readonly />
         </p>
         <p>
           <label for="cTot">Valor Total: R$</label>
-          <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly/>
+          <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly />
         </p>
       </fieldset>
 
