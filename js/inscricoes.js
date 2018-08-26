@@ -83,8 +83,12 @@ const calcularFormatura = () => {
 
   const horasDiarias = 4;
   const semanas = horasTotais / (horasDiarias * frequencia);
+  moment.locale("pt-br");
+  const dataDeFormatura = moment()
+    .add(semanas, "weeks")
+    .format("LL");
 
-  document.getElementById("cFormatura").setAttribute("value", `Em ${semanas} semanas`);
+  document.getElementById("cFormatura").setAttribute("value", dataDeFormatura);
 };
 
 checkboxesCargaHoraria.forEach(checkbox => {
@@ -114,3 +118,35 @@ const calcularPreco = () => {
 checkboxesCargaHoraria.forEach(checkbox => {
   checkbox.addEventListener("change", calcularPreco);
 });
+
+/*
+  Validar o formulário
+ */
+
+const formulario = document.getElementById("formulario-inscricao");
+
+const validarDataDeNascimento = campoDataDeNascimento => {
+  const dataDeNascimento = moment(campoDataDeNascimento.value);
+  if (dataDeNascimento >= moment().subtract(15, "years")) {
+    campoDataDeNascimento.style.border = "1px solid #D12E41";
+    const elementoErro = document.createElement("div");
+    const textoErro = document.createTextNode("Você deve ser maior de 15 anos para se cadastrar");
+    elementoErro.style.color = "#D12E41";
+    elementoErro.style.fontSize = "0.688rem";
+    elementoErro.appendChild(textoErro);
+    campoDataDeNascimento.parentElement.prepend(elementoErro);
+  }
+};
+
+const validarFormulario = evento => {
+  evento.preventDefault();
+  const campoData = document.querySelector("#cNasc");
+
+  if (campoData.value === "") {
+    evento.target.submit();
+  } else {
+    validarDataDeNascimento(campoData);
+  }
+};
+
+formulario.addEventListener("submit", validarFormulario);
